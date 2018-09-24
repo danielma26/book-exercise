@@ -14,10 +14,10 @@ class Book
     //2.85
     private int pages;
     //2.88
-    private String ref;
+    private String ref = "";
     //2.91
     private int borrowed;
-    
+    //2.92
     private boolean courseText;
     
     
@@ -25,47 +25,45 @@ class Book
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle)
+    public Book(String bookAuthor, String bookTitle, int bookPages, boolean refNumber)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
         ref = refNumber;
+        borrowed = 0;
         
     }
     
     //2.84
     public printAuthor(String bookAuthor)
     {
-    system.out.println("bookAuthor");
+    system.out.println(bookAuthor);
     }
     
     
     public printTitle(String bookTitle)
     {
-    system.out.println("bookTitle");
+    system.out.println(bookTitle);
     }
     
-    pulic getPage(int bookPages)
+    public getPage(int bookPages)
     {
-    system.out.printLS("bookPages");
+    return (bookPages);
     }
     
-    pulic void setRefNumber(String ref)
-    {
-     getRefNumber
-        
-    }
     
     public getBorrowed (int borrowed)
     {
-        
+    return (borrowed);
     }
     
     
-   public printDetails (String refNumber)
+   public setRefNumber (String ref)
    {
-       if length.refNumber=!0
+       if refNumber.length=!0
+           
+           
            system.out.println("ZZZ");
        
        else 
@@ -75,8 +73,25 @@ class Book
     public isCoursetext (boolean courseText)
         
     {
-        
+        return (courseText)
     }
 
-    // Add the methods here ...
+   public void increaseBorrowed()
+   {
+       borrowed += 1;
+   }
+
+    
+   public void printDetails()
+   {
+       System.out.println("The title of the book is: " +bookTitle + ", ");
+       System.out.println("The author of the book is: " + bookAuthor +", ");
+       System.out.println("The number of pages is: " +bookPages+ ", ");
+       System.out.println("Currently on page: " +refNumber+ ", ");
+       System.out.println("The book has been borrowed " + borrowed + " times");
+      
+   }
+
+    
+    
 }
