@@ -15,6 +15,11 @@ class Book
     private int pages;
     //2.88
     private String ref;
+    //2.91
+    private int borrowed;
+    
+    private boolean courseText;
+    
     
     /**
      * Set the author and title fields when this object
@@ -25,7 +30,8 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
-        ref= refNumber;
+        ref = refNumber;
+        
     }
     
     //2.84
@@ -51,6 +57,12 @@ class Book
         
     }
     
+    public getBorrowed (int borrowed)
+    {
+        
+    }
+    
+    
    public printDetails (String refNumber)
    {
        if length.refNumber=!0
@@ -59,7 +71,12 @@ class Book
        else 
            system.out.println("refNumber");
    }
-       
+      
+    public isCoursetext (boolean courseText)
+        
+    {
+        
+    }
 
     // Add the methods here ...
 }
