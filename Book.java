@@ -84,11 +84,7 @@ class Book
     
    public void printDetails()
    {
-       System.out.println("The title of the book is: " +bookTitle + ", ");
-       System.out.println("The author of the book is: " + bookAuthor +", ");
-       System.out.println("The number of pages is: " +bookPages+ ", ");
-       System.out.println("Currently on page: " +refNumber+ ", ");
-       System.out.println("The book has been borrowed " + borrowed + " times");
+       System.out.println(bookTitle + ", "+bookAuthor+", "+bookPages+", "+refNumber+ ", "+ borrowed+ " times.");
       
    }
 
